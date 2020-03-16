@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ShimmerSwift",
+        "repositoryURL": "https://github.com/BeauNouvelle/ShimmerSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "bd9b4bfc9a7dcb4d7da585bc648cf1d185c2aa7c",
+          "version": "2.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
