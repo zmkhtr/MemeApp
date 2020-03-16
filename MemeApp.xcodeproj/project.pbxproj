@@ -16,6 +16,7 @@
 		2075C7FB2414BB0900499B5D /* ShimmerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2075C7FA2414BB0900499B5D /* ShimmerSwift */; };
 		2075C7FD2414BB6700499B5D /* MemeObjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2075C7FC2414BB6700499B5D /* MemeObjectResponse.swift */; };
 		2075C7FF2414BB9B00499B5D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2075C7FE2414BB9B00499B5D /* UIHelper.swift */; };
+		20B71F2E241F988100EB9E15 /* PreviewImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B71F2D241F988100EB9E15 /* PreviewImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2075C7F32414B81000499B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2075C7FC2414BB6700499B5D /* MemeObjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeObjectResponse.swift; sourceTree = "<group>"; };
 		2075C7FE2414BB9B00499B5D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		20B71F2D241F988100EB9E15 /* PreviewImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				2075C7F32414B81000499B5D /* Info.plist */,
 				2075C7FC2414BB6700499B5D /* MemeObjectResponse.swift */,
 				2075C7FE2414BB9B00499B5D /* UIHelper.swift */,
+				20B71F2D241F988100EB9E15 /* PreviewImageController.swift */,
 			);
 			path = MemeApp;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				2075C7EA2414B80D00499B5D /* ViewController.swift in Sources */,
 				2075C7FD2414BB6700499B5D /* MemeObjectResponse.swift in Sources */,
+				20B71F2E241F988100EB9E15 /* PreviewImageController.swift in Sources */,
 				2075C7E62414B80D00499B5D /* AppDelegate.swift in Sources */,
 				2075C7FF2414BB9B00499B5D /* UIHelper.swift in Sources */,
 				2075C7E82414B80D00499B5D /* SceneDelegate.swift in Sources */,
