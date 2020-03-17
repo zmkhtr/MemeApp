@@ -25,9 +25,13 @@ class ViewController: UIViewController {
     
     let shimmerView = ShimmeringView(frame: CGRect(x: 0, y: 154, width: 414, height: 564))
     
-    let listMemeSource = ["memes":"https://meme-api.herokuapp.com/gimme/memes/100",
-                      "dank":"https://meme-api.herokuapp.com/gimme/dankmemes/100",
-                      "trending":"https://meme-api.herokuapp.com/gimme/PewdiepieSubmissions/100"]
+    enum memeCategory {
+        case memes, dank, trending
+    }
+    
+    let listMemeSource = [memeCategory.memes:"https://meme-api.herokuapp.com/gimme/memes/100",
+                          memeCategory.dank:"https://meme-api.herokuapp.com/gimme/dankmemes/100",
+                          memeCategory.trending:"https://meme-api.herokuapp.com/gimme/PewdiepieSubmissions/100"]
     
     var listMemeImage = [Meme]()
     
@@ -52,16 +56,11 @@ class ViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped(tapGestureRecognizer:)))
                  imageContainer.isUserInteractionEnabled = true
                 imageContainer.addGestureRecognizer(tapGestureRecognizer)
-        
-        print("SETT")
     }
     
     @IBAction func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-//        _ = tapGestureRecognizer.view as! UIImageView
-        print("LOHE")
         performSegue(withIdentifier: "viewDetailSegue", sender: self)
-        print("CLICK")
     }
     
     
@@ -78,16 +77,16 @@ class ViewController: UIViewController {
     @IBAction func categoryControl(_ sender: UISegmentedControl){
            switch sender.selectedSegmentIndex {
              case 0:
-                memeUrl = listMemeSource["memes"]
+                memeUrl = listMemeSource[memeCategory.memes]
             generateRandomMeme()
              case 1:
-                memeUrl = listMemeSource["dank"]
+                memeUrl = listMemeSource[memeCategory.dank]
                 generateRandomMeme()
              case 2:
-                memeUrl = listMemeSource["trending"]
+                memeUrl = listMemeSource[memeCategory.trending]
                 generateRandomMeme()
              default:
-                memeUrl = listMemeSource["memes"]
+                memeUrl = listMemeSource[memeCategory.memes]
                 generateRandomMeme()
              }
     }
@@ -141,7 +140,6 @@ class ViewController: UIViewController {
                   
                               do {
                                   let json = try JSONDecoder().decode(MemeObjectResponse.self, from: data! )
-//                                self.setMeme(memeObject: json)
                                 self.fetchImageList(memeObject: json.memes)
                                   print(json)
                                 self.notLoading = true

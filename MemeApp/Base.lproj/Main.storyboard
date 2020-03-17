@@ -94,10 +94,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bu9-OY-c9i">
-                                <rect key="frame" x="16" y="20" width="382" height="788"/>
+                                <rect key="frame" x="0.0" y="55" width="414" height="753"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-PB-NLW">
+                                <rect key="frame" x="20" y="20" width="33" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="􀆄"/>
+                                <connections>
+                                    <action selector="closeModal:" destination="Reh-gK-tYS" eventType="touchUpInside" id="j8l-46-fk4"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bu9-OY-c9i" firstAttribute="top" secondItem="4ha-jb-D1D" secondAttribute="top" id="3ru-Dr-cFC"/>
                             <constraint firstItem="Bu9-OY-c9i" firstAttribute="top" secondItem="4ha-jb-D1D" secondAttribute="top" id="FAW-xa-KfO"/>
@@ -121,4 +129,7 @@
             <point key="canvasLocation" x="1021.7391304347827" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="􀆄" width="19" height="19"/>
+    </resources>
 </document>
